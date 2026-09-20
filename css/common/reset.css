@@ -1,0 +1,166 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/pretendard/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/pretendard/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/pretendard/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/pretendard/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+:root{
+  --primary1-color: #0f4f4d;
+  --primary2-color: #176b68;
+  --primary3-color: #ddf1ee;
+  --secondary1-color: #e9957f;
+  --secondary2-color: #feebe6;
+  --txt1-color: #252b2b;
+  --txt2-color: #535b5b;
+  --txt3-color: #687272;
+  --txt4-color: #dde3e1;
+  --back1-color: #faf8f3;
+  --back2-color: #eff2f1;
+  --title-font: 'Paperozi';
+  --body-font: 'Pretendard';
+}
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--txt1-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  word-break: keep-all;
+}
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+ul, li {
+  list-style: none;
+}
+h2{
+  font-family: var(--title-font);
+  font-size: 3rem;
+  line-height: 3.625rem;
+  font-weight: 600;
+}
+h3{
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+button:focus{
+  outline: 2px solid var(--secondary1-color);
+  outline-offset: 2px;
+}
+@media screen and (max-width: 1024px){
+  h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  h3{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 390px){
+  h2{
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
+/* ir */
+.ir_pm{
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.ir_wa{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.ir_su{
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -99999px;
+}
