@@ -218,8 +218,11 @@ section.doctor .txt-con.default.scroll{
   transform: translateX(0);
   opacity: 1;
 }
-section.doctor .txt-con h4{
+section.doctor .txt-con h3{
   font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: var(--primary1-color);
   margin-bottom: 8px;
 }
@@ -300,9 +303,10 @@ section.features .con ul li:nth-child(3){
 section.features .con ul li:nth-child(4){
   background: url('../../img/features3.png') no-repeat center / cover;
 }
-section.features .con ul li h4{
+section.features .con ul li h3{
   font-size: 1rem;
   font-weight: 500;
+  font-family: var(--body-font);
   line-height: 1.25rem;
   color: var(--back1-color);
   position: relative;
@@ -524,7 +528,7 @@ section.orthodontics .checklist-con .img-box img{
 section.orthodontics .checklist-con .txt-box{
   flex: 0 1 440px;
 }
-section.orthodontics .checklist-con .txt-box h4{
+section.orthodontics .checklist-con .txt-box h3{
   font-weight: 600;
   font-family: var(--title-font);
   color: var(--primary1-color);
@@ -705,10 +709,11 @@ section.blog .con ul li a .img-box img{
 section.blog .con ul li a .txt-box{
   padding: 4px 0;
 }
-section.blog .con ul li a .txt-box h4{
+section.blog .con ul li a .txt-box h3{
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
+  font-family: var(--body-font);
 }
 section.blog .con ul li a .txt-box span.date{
   display: block;
@@ -869,7 +874,7 @@ section.blog .con ul li a .txt-box p{
   section.doctor .txt-con{
     display: none;
   }
-  section.doctor .txt-con h4{
+  section.doctor .txt-con h3{
     text-align: right;
   }
   section.doctor .txt-con ul li{
@@ -1078,7 +1083,7 @@ section.blog .con ul li a .txt-box p{
     display: block;
     padding: 24px 0 0;
   }
-  section.doctor .txt-con h4{
+  section.doctor .txt-con h3{
     text-align: center;
   }
   section.doctor .txt-con ul li{
@@ -1203,7 +1208,7 @@ section.blog .con ul li a .txt-box p{
   section.orthodontics .checklist-con .txt-box{
     margin-top: 24px;
   }
-  section.orthodontics .checklist-con .txt-box h4{
+  section.orthodontics .checklist-con .txt-box h3{
     text-align: center;
   }
   section.orthodontics .checklist-con .txt-box ul{
