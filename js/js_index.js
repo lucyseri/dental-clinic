@@ -15,7 +15,7 @@ function heroBannerRatioFn(){
   }
 };
 function heroBannerHeightFn(num){
-  let heroBannerHeight = heroBanner.offsetWidth*num;
+  let heroBannerHeight = heroBannerLi[0].offsetWidth*num;
   heroBanner.style.height = heroBannerHeight+'px';
 };
 heroBannerRatioFn();
@@ -168,7 +168,6 @@ const implantArray = [
   new ImplantObj('img/process2.png', '임플란트 식립', '치아가 없는 부위에 임플란트를 식립합니다'),
   new ImplantObj('img/process3.png', '보철물 제작·장착', '자연치아와 조화를 고려해 보철물을 장착합니다')
 ];
-console.log(implantArray[0].title);
 const implantSelectedImg = document.querySelector('section.implant .selected-inner img');
 const stepNum = document.querySelector('section.implant .selected-inner .desc-box .step-num h4');
 const detailTitle = document.querySelector('section.implant .selected-inner .desc-box .detail-txt h4');
@@ -261,7 +260,6 @@ const implantSec = document.querySelector('section.implant');
 const orthodonticsSec = document.querySelector('section.orthodontics');
 const orthodonticsChecklistUl = document.querySelector('section.orthodontics .checklist-con .txt-box ul');
 window.addEventListener('scroll', function(){
-  console.log(orthodonticsSec.offsetTop);
   if(this.scrollY>departmentSec.offsetTop/2){
     departmentSecUl.classList.add('scroll');
   }else{
